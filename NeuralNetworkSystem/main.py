@@ -20,7 +20,7 @@ class MeinNetz(nn.Module):
         size = x.size()[1:]
         num = 1
         for i in size:
-            num *= 1
+            num *= i
         return num
 
 netz = MeinNetz()
