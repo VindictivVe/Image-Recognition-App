@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:2:1-13:12
-INJECTED from D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:2:1-13:12
-INJECTED from D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:2:1-13:12
-INJECTED from D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:2:1-13:12
+ADDED from D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:2:1-22:12
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\nikul\.gradle\caches\transforms-2\files-2.1\e4d75dbed20accc39d849d00a209961c\material-1.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\nikul\.gradle\caches\transforms-2\files-2.1\a4bf7842722ec4460f5546066eab47a3\constraintlayout-2.0.1\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.3.1] C:\Users\nikul\.gradle\caches\transforms-2\files-2.1\9a993c6c225994ea69d3bb36157a0ce4\appcompat-1.3.1\AndroidManifest.xml:17:1-24:12
@@ -39,25 +39,25 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\nikul\.gradle\ca
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\nikul\.gradle\caches\transforms-2\files-2.1\7814cceeb7ac44ad46459a3c3c62875b\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\nikul\.gradle\caches\transforms-2\files-2.1\40996d6039fa2fb22354b30f3d767665\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\nikul\.gradle\caches\transforms-2\files-2.1\a77c810a56173ccf6fb339f045a6aacd\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:2:1-13:12
-INJECTED from D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:2:1-13:12
-INJECTED from D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:2:1-13:12
+INJECTED from D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:2:1-22:12
 	package
 		ADDED from D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:3:5-49
 		INJECTED from D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml
-		ADDED from D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:2:1-13:12
+		ADDED from D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:2:1-22:12
 		INJECTED from D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml
-		ADDED from D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:2:1-13:12
+		ADDED from D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:2:1-22:12
 		INJECTED from D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:5:5-11:60
+ADDED from D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:5:5-21:19
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\nikul\.gradle\caches\transforms-2\files-2.1\e4d75dbed20accc39d849d00a209961c\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\nikul\.gradle\caches\transforms-2\files-2.1\e4d75dbed20accc39d849d00a209961c\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\nikul\.gradle\caches\transforms-2\files-2.1\a4bf7842722ec4460f5546066eab47a3\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
@@ -80,6 +80,28 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ni
 		ADDED from D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:11:9-57
+activity#de.haw_hamburg.imagerecognitionapp.StartMenu
+ADDED from D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:12:19-44
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:16:27-74
+activity#de.haw_hamburg.imagerecognitionapp.MainMenu
+ADDED from D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:19:5-51
+	android:name
+		ADDED from D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:19:15-39
+activity#de.haw_hamburg.imagerecognitionapp.TakePicture
+ADDED from D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:20:5-54
+	android:name
+		ADDED from D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:20:15-42
 uses-sdk
 INJECTED from D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml

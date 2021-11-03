@@ -15,65 +15,65 @@
         android:text="Identify Me If You Can"
         android:textColor="#ffee11"
         android:textSize="55sp"
-        app:layout_constraintBottom_toTopOf="@+id/spielen_button"
+        app:layout_constraintBottom_toTopOf="@+id/take_picture_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/highscores_button"
+        android:id="@+id/history_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#ffee11"
-        android:text="Highscores"
+        android:text="photo history"
         android:textColor="#009103"
-        app:layout_constraintBottom_toTopOf="@+id/optionen_button"
+        app:layout_constraintBottom_toTopOf="@+id/options_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spielen_button" />
+        app:layout_constraintTop_toBottomOf="@+id/take_picture_button" />
 
     <Button
-        android:id="@+id/optionen_button"
+        android:id="@+id/options_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#ffee11"
-        android:text="Optionen"
+        android:text="options"
         android:textColor="#009103"
-        app:layout_constraintBottom_toTopOf="@+id/beenden_button"
+        app:layout_constraintBottom_toTopOf="@+id/exit_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/highscores_button" />
+        app:layout_constraintTop_toBottomOf="@+id/history_button" />
 
     <Button
-        android:id="@+id/spielen_button"
+        android:id="@+id/take_picture_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#ffee11"
-        android:text="Spielen"
+        android:text="Take a picture"
         android:textColor="#009103"
-        app:layout_constraintBottom_toTopOf="@+id/highscores_button"
+        app:layout_constraintBottom_toTopOf="@+id/history_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appname_textview" />
 
     <Button
-        android:id="@+id/beenden_button"
+        android:id="@+id/exit_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#ffee11"
-        android:text="Beenden"
+        android:text="exit app"
         android:textColor="#009103"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/optionen_button" />
+        app:layout_constraintTop_toBottomOf="@+id/options_button" />
 </androidx.constraintlayout.widget.ConstraintLayout>

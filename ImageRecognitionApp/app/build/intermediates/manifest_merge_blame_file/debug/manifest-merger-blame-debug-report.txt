@@ -11,7 +11,7 @@
 9-->D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:5:5-11:60
+11-->D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:5:5-21:19
 12        android:allowBackup="true"
 12-->D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -26,7 +26,29 @@
 18-->D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:9:9-54
 19        android:supportsRtl="true"
 19-->D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:10:9-35
-20        android:theme="@style/Theme.ImageRecognitionApp" />
-20-->D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:11:9-57
-21
-22</manifest>
+20        android:testOnly="true"
+21        android:theme="@style/Theme.ImageRecognitionApp" >
+21-->D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:11:9-57
+22        <activity android:name="de.haw_hamburg.imagerecognitionapp.StartMenu" >
+22-->D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:12:9-18:20
+22-->D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:12:19-44
+23            <intent-filter>
+23-->D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:13:13-17:29
+24                <action android:name="android.intent.action.MAIN" />
+24-->D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:14:17-69
+24-->D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:14:25-66
+25
+26                <category android:name="android.intent.category.LAUNCHER" />
+26-->D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:16:17-77
+26-->D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:16:27-74
+27            </intent-filter>
+28        </activity>
+29        <activity android:name="de.haw_hamburg.imagerecognitionapp.MainMenu" />
+29-->D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:19:5-51
+29-->D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:19:15-39
+30        <activity android:name="de.haw_hamburg.imagerecognitionapp.TakePicture" />
+30-->D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:20:5-54
+30-->D:\Dokuments\GitHub\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:20:15-42
+31    </application>
+32
+33</manifest>

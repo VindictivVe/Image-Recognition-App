@@ -16,7 +16,7 @@ public class StartMenu extends AppCompatActivity {
         setContentView(R.layout.start_view);
 
         final MediaPlayer mp = MediaPlayer.create(this, R.raw.button_click);
-        Button button = findViewById(R.id.start_button);
+        Button button = findViewById(R.id.camera_button);
         button.setSoundEffectsEnabled(false);
         button.setOnClickListener(new View.OnClickListener() {
             @Override

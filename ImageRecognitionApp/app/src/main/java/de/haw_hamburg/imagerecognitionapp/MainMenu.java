@@ -1,5 +1,6 @@
 package de.haw_hamburg.imagerecognitionapp;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
@@ -14,38 +15,40 @@ public class MainMenu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_view);
 
-        Button spielen = findViewById(R.id.spielen_button);
-        spielen.setSoundEffectsEnabled(false);
-        Button highscores = findViewById(R.id.highscores_button);
-        highscores.setSoundEffectsEnabled(false);
-        Button optionen = findViewById(R.id.optionen_button);
-        optionen.setSoundEffectsEnabled(false);
-        Button beenden = findViewById(R.id.beenden_button);
-        beenden.setSoundEffectsEnabled(false);
+        Button takePicture = findViewById(R.id.take_picture_button);
+        takePicture.setSoundEffectsEnabled(false);
+        Button history = findViewById(R.id.history_button);
+        history.setSoundEffectsEnabled(false);
+        Button options = findViewById(R.id.options_button);
+        options.setSoundEffectsEnabled(false);
+        Button exit = findViewById(R.id.exit_button);
+        exit.setSoundEffectsEnabled(false);
 
         final MediaPlayer mp = MediaPlayer.create(this, R.raw.button_click);
-        spielen.setOnClickListener(new View.OnClickListener() {
+        takePicture.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mp.start();;
+                Intent intent = new Intent(MainMenu.this, TakePicture.class);
+                startActivity(intent);
             }
         });
 
-        highscores.setOnClickListener(new View.OnClickListener() {
+        history.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mp.start();
             }
         });
 
-        optionen.setOnClickListener(new View.OnClickListener() {
+        options.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mp.start();
             }
         });
 
-        beenden.setOnClickListener(new View.OnClickListener() {
+        exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mp.start();

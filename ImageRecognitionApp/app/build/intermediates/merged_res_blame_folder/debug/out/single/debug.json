@@ -44,6 +44,10 @@
         "source": "D:\\Dokuments\\GitHub\\KI-macht\\ImageRecognitionApp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
+        "merged": "D:\\Dokuments\\GitHub\\KI-macht\\ImageRecognitionApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_take_picture_view.xml.flat",
+        "source": "D:\\Dokuments\\GitHub\\KI-macht\\ImageRecognitionApp\\app\\src\\main\\res\\layout\\take_picture_view.xml"
+    },
+    {
         "merged": "D:\\Dokuments\\GitHub\\KI-macht\\ImageRecognitionApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
         "source": "D:\\Dokuments\\GitHub\\KI-macht\\ImageRecognitionApp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
