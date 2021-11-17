@@ -1831,6 +1831,7 @@ id buttonPanel
 id camera_button
 id camera_view
 id cancel_button
+id catOrDogTextView
 id center
 id center_horizontal
 id center_vertical
@@ -2113,6 +2114,7 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
+id takeAPictureBack
 id take_picture_button
 id test_checkbox_android_button_tint
 id test_checkbox_app_button_tint
