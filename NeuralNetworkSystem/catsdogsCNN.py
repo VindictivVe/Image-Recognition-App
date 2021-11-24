@@ -3,6 +3,7 @@ from torch.nn.modules.linear import Linear
 import torchvision
 from torchvision import transforms
 from PIL import Image
+import os
 from os import listdir
 import random
 import torch.optim as optimizer
@@ -102,3 +103,12 @@ def isCatOrDog(): #test funktion for net
     print(out.data.max(1, keepdim = True)[1])
     pic.show()
     x = input('') #testing for several pictures
+
+
+if os.path.isfile("catOrDogNet.pt"):
+    catOrDog = torch.load("catOrDogNet.pt")
+    isCatOrDog()
+else:
+    for epoch in range(1,30):
+        train(epoch)
+    isCatOrDog()
