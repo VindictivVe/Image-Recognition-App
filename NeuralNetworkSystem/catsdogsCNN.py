@@ -37,8 +37,8 @@ for i in range(len(pictureFiles)):
     fileSolution = [fileIsCat,fileIsDog] #only one is true
     solution_list.append(fileSolution) 
     if len(tensor_data_list) >= 64: #all 64 saving training data
-        training_data.append((torch.stack(training_data), solution_list))
-        training_data = []
+        training_data.append((torch.stack(tensor_data_list), solution_list))
+        tensor_data_list = []
 
 class CNN(nn.Module): #neuronale net
     def __init__(self): #'construcktor'
