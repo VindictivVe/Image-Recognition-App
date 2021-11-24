@@ -29,7 +29,7 @@ public class TakePicture extends AppCompatActivity {
 
         this.imageView = (ImageView) this.findViewById(R.id.camera_view);
         final MediaPlayer mp = MediaPlayer.create(this, R.raw.button_click);
-        catOrDogTextView = findViewById(R.id.catOrDogTextView);
+        catOrDogTextView = findViewById(R.id.cat_or_dog_text_view);
         catOrDogTextView.setVisibility(View.INVISIBLE);
         takePicture = findViewById(R.id.camera_button);
         takePicture.setSoundEffectsEnabled(false);
@@ -41,11 +41,13 @@ public class TakePicture extends AppCompatActivity {
                 startActivityForResult(intent, CAMERA_REQUEST);
             }
         });
-        back = findViewById(R.id.takeAPictureBack);
+        back = findViewById(R.id.take_a_picture_back);
+        back.setSoundEffectsEnabled(false);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //TODO if BitMap not Null safe for photoGallery
+                mp.start();
+                //TODO if BitMap not Null safe for photoHistory
                 Intent intent = new Intent(TakePicture.this, MainMenu.class);
                 startActivity(intent);
             }

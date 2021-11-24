@@ -38,6 +38,8 @@ public class MainMenu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 mp.start();
+                Intent intent = new Intent(MainMenu.this, History.class);
+                startActivity(intent);
             }
         });
 
@@ -45,6 +47,8 @@ public class MainMenu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 mp.start();
+                Intent intent = new Intent(MainMenu.this, Options.class);
+                startActivity(intent);
             }
         });
 
