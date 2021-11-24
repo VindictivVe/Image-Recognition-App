@@ -93,9 +93,9 @@ def train(epoch): #trains the net
 
 def isCatOrDog(): #test funktion for net
     catOrDog.eval() #CNN eval mode
-    pictureFiles = listdir('catdog/test/') #get picture from android
+    pictureFiles = listdir('catdog/test_dataset/') #get picture from android
     file = random.choice(pictureFiles)
-    pic = Image.open('catdog/test/' + file)
+    pic = Image.open('catdog/test_dataset/' + file)
     pic_eval_tensor = transforms(pic)
     pic_eval_tensor.unsqueeze_(0) #batchsize in front cause only 1 pic
     data = Variable(pic_eval_tensor)
