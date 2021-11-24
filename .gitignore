@@ -1,6 +1,9 @@
 .gradle
 /build/
 
+# Ignore train data
+/cats_and_dogs/
+
 # Ignore Gradle GUI config
 gradle-app.setting
 
