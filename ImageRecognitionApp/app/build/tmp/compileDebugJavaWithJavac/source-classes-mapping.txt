@@ -1,8 +1,8 @@
-de/haw_hamburg/imagerecognitionapp/BuildConfig.java
- de.haw_hamburg.imagerecognitionapp.BuildConfig
 de/haw_hamburg/imagerecognitionapp/StartMenu.java
  de.haw_hamburg.imagerecognitionapp.StartMenu
  de.haw_hamburg.imagerecognitionapp.StartMenu$1
+de/haw_hamburg/imagerecognitionapp/BuildConfig.java
+ de.haw_hamburg.imagerecognitionapp.BuildConfig
 de/haw_hamburg/imagerecognitionapp/History.java
  de.haw_hamburg.imagerecognitionapp.History
  de.haw_hamburg.imagerecognitionapp.History$1
