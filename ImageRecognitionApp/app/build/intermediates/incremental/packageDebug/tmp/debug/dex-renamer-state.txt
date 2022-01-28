@@ -1,4 +1,4 @@
-#Wed Jan 19 16:41:27 CET 2022
+#Fri Jan 28 15:32:17 CET 2022
 base.0=D\:\\KI-macht\\KI-macht\\ImageRecognitionApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex

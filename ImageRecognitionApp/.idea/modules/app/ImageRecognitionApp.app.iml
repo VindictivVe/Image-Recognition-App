@@ -95,6 +95,7 @@
     <orderEntry type="library" name="Gradle: org.tensorflow:tensorflow-lite:2.7.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: org.tensorflow:tensorflow-lite-api:2.7.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.android.odml:image:1.0.0-beta1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: org.tensorflow:tensorflow-lite-gpu:2.2.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: org.pytorch:pytorch_android:1.7.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: org.pytorch:pytorch_android_torchvision:1.7.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: org.tensorflow:tensorflow-lite-task-base:0.3.0@aar" level="project" />
