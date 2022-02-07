@@ -28,6 +28,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.io.IOException;
 import java.nio.MappedByteBuffer;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class TakePicture extends AppCompatActivity {
     private static final int CAMERA_REQUEST = 1;
@@ -91,27 +92,18 @@ public class TakePicture extends AppCompatActivity {
 
             // Log result
             //****************************************************
-            float[] result = doPrediction(photo);
+            String result = doPrediction(photo);
             //****************************************************
 
             imageView.setImageBitmap(photo);
             takePicture.setVisibility(View.INVISIBLE);
             catOrDogTextView.setVisibility(View.VISIBLE);
 
-            if(result[0] == 1 && result[1] == 0 && result[2] == 0){
-                catOrDogTextView.setText("Cat");
-            } else if(result[0] == 0 && result[1] == 1 && result[2] == 0){
-                catOrDogTextView.setText("Dog");
-            } else if(result[0] == 0 && result[1] == 0 && result[2] == 1){
-                catOrDogTextView.setText("Spider");
-            } else {
-                catOrDogTextView.setText("None");
-            }
-
+            catOrDogTextView.setText(result);
         }
     }
 
-    public float[] doPrediction(Bitmap bitmap) {
+    public String doPrediction(Bitmap bitmap) {
         //Initialize ImageProcessor to crop and resize the image: resize method https://www.tensorflow.org/api_docs/python/tf/image/resize?hl=en
         ImageProcessor imageProcessor = new ImageProcessor.Builder()
                 .add(new ResizeOp(128, 128, ResizeOp.ResizeMethod.BILINEAR))
@@ -130,7 +122,7 @@ public class TakePicture extends AppCompatActivity {
 
         //Load model and pass it into interpreter
         try {
-            MappedByteBuffer tfliteModel = FileUtil.loadMappedFile(TakePicture.this, "model128.tflite");
+            MappedByteBuffer tfliteModel = FileUtil.loadMappedFile(TakePicture.this, "model128_final.tflite");
             tflite = new Interpreter(tfliteModel, new Interpreter.Options());
         } catch (IOException e){
             Log.e("result", "Error reading model", e);
@@ -141,11 +133,11 @@ public class TakePicture extends AppCompatActivity {
             tflite.run(tensorImage.getBuffer(), probabilityBuffer.getBuffer());
         }
 
-        Log.i("result", "Success: " + tensorImage.getBuffer() + " " + probabilityBuffer.getFloatArray());
+        Log.i("result", Arrays.toString(probabilityBuffer.getFloatArray()));
 
         //Close interpreter to avoid memory leak
         tflite.close();
 
-        return probabilityBuffer.getFloatArray();
+        return Arrays.toString(probabilityBuffer.getFloatArray());
     }
 }
