@@ -36,7 +36,10 @@ public class TakePicture extends AppCompatActivity {
     Bitmap photo;
     Button takePicture;
     ImageButton back;
-    TextView catOrDogTextView;
+    TextView catOrDogTextView1;
+    TextView catOrDogTextView2;
+    TextView catOrDogTextView3;
+    TextView formatInfo;
     Interpreter tflite;
     ArrayList<Bitmap> photoHistory = new ArrayList();
 
@@ -46,8 +49,13 @@ public class TakePicture extends AppCompatActivity {
         setContentView(R.layout.take_picture_view);
         this.imageView = (ImageView) this.findViewById(R.id.camera_view);
         final MediaPlayer mp = MediaPlayer.create(this, R.raw.button_click);
-        catOrDogTextView = findViewById(R.id.cat_or_dog_text_view);
-        catOrDogTextView.setVisibility(View.INVISIBLE);
+        catOrDogTextView1 = findViewById(R.id.cat_or_dog_text_view1);
+        catOrDogTextView1.setVisibility(View.INVISIBLE);
+        catOrDogTextView2 = findViewById(R.id.cat_or_dog_text_view2);
+        catOrDogTextView2.setVisibility(View.INVISIBLE);
+        catOrDogTextView3 = findViewById(R.id.cat_or_dog_text_view3);
+        catOrDogTextView3.setVisibility(View.INVISIBLE);
+        formatInfo = findViewById(R.id.formatInfo);
         takePicture = findViewById(R.id.camera_button);
         takePicture.setSoundEffectsEnabled(false);
         takePicture.setOnClickListener(new View.OnClickListener() {
@@ -106,18 +114,23 @@ public class TakePicture extends AppCompatActivity {
 
             // Log result
             //****************************************************
-            String result = doPrediction(photo);
+            float[] result = doPrediction(photo);
             //****************************************************
 
             imageView.setImageBitmap(photo);
             takePicture.setVisibility(View.INVISIBLE);
-            catOrDogTextView.setVisibility(View.VISIBLE);
+            formatInfo.setVisibility(View.INVISIBLE);
+            catOrDogTextView1.setVisibility(View.VISIBLE);
+            catOrDogTextView2.setVisibility(View.VISIBLE);
+            catOrDogTextView3.setVisibility(View.VISIBLE);
 
-            catOrDogTextView.setText(result);
+            catOrDogTextView1.setText("Katze: " + (result[0]*100) + "%");
+            catOrDogTextView2.setText("Hund: " + (result[1]*100) + "%");
+            catOrDogTextView3.setText("Spinne: " + (result[2]*100) + "%");
         }
     }
 
-    public String doPrediction(Bitmap bitmap) {
+    public float[] doPrediction(Bitmap bitmap) {
         //Initialize ImageProcessor to crop and resize the image: resize method https://www.tensorflow.org/api_docs/python/tf/image/resize?hl=en
         ImageProcessor imageProcessor = new ImageProcessor.Builder()
                 .add(new ResizeOp(128, 128, ResizeOp.ResizeMethod.BILINEAR))
@@ -136,7 +149,7 @@ public class TakePicture extends AppCompatActivity {
 
         //Load model and pass it into interpreter
         try {
-            MappedByteBuffer tfliteModel = FileUtil.loadMappedFile(TakePicture.this, "model128_final.tflite");
+            MappedByteBuffer tfliteModel = FileUtil.loadMappedFile(TakePicture.this, "model128_final_rescaleInNet.tflite");
             tflite = new Interpreter(tfliteModel, new Interpreter.Options());
         } catch (IOException e){
             Log.e("result", "Error reading model", e);
@@ -152,6 +165,7 @@ public class TakePicture extends AppCompatActivity {
         //Close interpreter to avoid memory leak
         tflite.close();
 
-        return Arrays.toString(probabilityBuffer.getFloatArray());
+        return probabilityBuffer.getFloatArray();
     }
 }
+

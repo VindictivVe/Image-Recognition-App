@@ -1831,7 +1831,9 @@ id buttonPanel
 id camera_button
 id camera_view
 id cancel_button
-id cat_or_dog_text_view
+id cat_or_dog_text_view1
+id cat_or_dog_text_view2
+id cat_or_dog_text_view3
 id center
 id center_horizontal
 id center_vertical
@@ -1910,6 +1912,7 @@ id fixed
 id flip
 id floating
 id forever
+id formatInfo
 id fragment_container_view_tag
 id ghost_view
 id ghost_view_holder
@@ -1921,6 +1924,9 @@ id groups
 id guideline
 id header_title
 id hideable
+id history_ImageView1
+id history_ImageView2
+id history_ImageView3
 id history_back_to_menu
 id history_button
 id home

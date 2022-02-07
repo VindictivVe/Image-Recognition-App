@@ -27,23 +27,50 @@
         android:textColorLink="#00ab1b"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/camera_view"
+        app:layout_constraintStart_toStartOf="@+id/camera_view"
         app:layout_constraintTop_toBottomOf="@+id/camera_view"
         app:layout_constraintVertical_bias="0.3" />
 
     <TextView
-        android:id="@+id/cat_or_dog_text_view"
+        android:id="@+id/cat_or_dog_text_view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="@+id/camera_button"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/camera_button"
+        app:layout_constraintTop_toBottomOf="@+id/camera_view" />
+
+    <TextView
+        android:id="@+id/cat_or_dog_text_view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="@+id/camera_button"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/camera_button"
+        app:layout_constraintTop_toBottomOf="@+id/cat_or_dog_text_view1" />
+
+    <TextView
+        android:id="@+id/cat_or_dog_text_view3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
         android:textColor="#FFFFFF"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/camera_view"
-        app:layout_constraintVertical_bias="0.3" />
+        app:layout_constraintEnd_toEndOf="@+id/camera_button"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/camera_button"
+        app:layout_constraintTop_toBottomOf="@+id/cat_or_dog_text_view2"
+        app:layout_constraintVertical_bias="0.208" />
 
     <ImageButton
         android:id="@+id/take_a_picture_back"
@@ -54,8 +81,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cat_or_dog_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/cat_or_dog_text_view1"
         app:layout_constraintVertical_bias="0.9"
         app:srcCompat="@android:drawable/ic_menu_revert" />
+
+    <TextView
+        android:id="@+id/formatInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:text="4:3 oder 1:1 Format für die bestmögliche \n Vorhersage nutzen!"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/camera_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/camera_view" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
