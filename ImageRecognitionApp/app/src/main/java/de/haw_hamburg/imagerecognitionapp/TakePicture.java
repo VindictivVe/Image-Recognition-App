@@ -38,7 +38,7 @@ public class TakePicture extends AppCompatActivity {
     ImageButton back;
     TextView catOrDogTextView;
     Interpreter tflite;
-    ArrayList<Bitmap> photoHistory;
+    ArrayList<Bitmap> photoHistory = new ArrayList();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +58,13 @@ public class TakePicture extends AppCompatActivity {
                 startActivityForResult(intent, CAMERA_REQUEST);
             }
         });
+
+        Intent intent = getIntent();
+        if (intent.hasExtra("bitmapList")){
+            photoHistory = intent.getParcelableArrayListExtra("bitmapList");
+            Log.i("error", "Size TP: "+photoHistory.size());
+        }
+
         back = findViewById(R.id.take_a_picture_back);
         back.setSoundEffectsEnabled(false);
         back.setOnClickListener(new View.OnClickListener() {
@@ -66,7 +73,14 @@ public class TakePicture extends AppCompatActivity {
                 mp.start();
                 //TODO if BitMap not Null save for photoHistory
                 Intent intent = new Intent(TakePicture.this, MainMenu.class);
-                intent.putExtra("photo", photo);
+//                intent.putExtra("photo", photo);
+                if(photo != null){
+                    photoHistory.add(photo);
+                }
+                if (photoHistory.size()>3){
+                    photoHistory.remove(0);
+                }
+                intent.putExtra("bitmapList", photoHistory);
                 startActivity(intent);
             }
         });
