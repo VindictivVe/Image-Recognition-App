@@ -1,12 +1,10 @@
-de/haw_hamburg/imagerecognitionapp/ml/Model128FinalRescaleinnet.java
- de.haw_hamburg.imagerecognitionapp.ml.Model128FinalRescaleinnet
- de.haw_hamburg.imagerecognitionapp.ml.Model128FinalRescaleinnet$1
- de.haw_hamburg.imagerecognitionapp.ml.Model128FinalRescaleinnet$Outputs
 de/haw_hamburg/imagerecognitionapp/StartMenu.java
  de.haw_hamburg.imagerecognitionapp.StartMenu
  de.haw_hamburg.imagerecognitionapp.StartMenu$1
-de/haw_hamburg/imagerecognitionapp/BuildConfig.java
- de.haw_hamburg.imagerecognitionapp.BuildConfig
+de/haw_hamburg/imagerecognitionapp/TakePicture.java
+ de.haw_hamburg.imagerecognitionapp.TakePicture
+ de.haw_hamburg.imagerecognitionapp.TakePicture$1
+ de.haw_hamburg.imagerecognitionapp.TakePicture$2
 de/haw_hamburg/imagerecognitionapp/History.java
  de.haw_hamburg.imagerecognitionapp.History
  de.haw_hamburg.imagerecognitionapp.History$1
@@ -17,13 +15,10 @@ de/haw_hamburg/imagerecognitionapp/ml/Model128Final.java
  de.haw_hamburg.imagerecognitionapp.ml.Model128Final
  de.haw_hamburg.imagerecognitionapp.ml.Model128Final$1
  de.haw_hamburg.imagerecognitionapp.ml.Model128Final$Outputs
-de/haw_hamburg/imagerecognitionapp/TakePicture.java
- de.haw_hamburg.imagerecognitionapp.TakePicture
- de.haw_hamburg.imagerecognitionapp.TakePicture$1
- de.haw_hamburg.imagerecognitionapp.TakePicture$2
+de/haw_hamburg/imagerecognitionapp/BuildConfig.java
+ de.haw_hamburg.imagerecognitionapp.BuildConfig
 de/haw_hamburg/imagerecognitionapp/MainMenu.java
  de.haw_hamburg.imagerecognitionapp.MainMenu
  de.haw_hamburg.imagerecognitionapp.MainMenu$1
  de.haw_hamburg.imagerecognitionapp.MainMenu$2
  de.haw_hamburg.imagerecognitionapp.MainMenu$3
- de.haw_hamburg.imagerecognitionapp.MainMenu$4

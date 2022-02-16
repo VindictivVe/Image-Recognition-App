@@ -1927,6 +1927,9 @@ id hideable
 id history_ImageView1
 id history_ImageView2
 id history_ImageView3
+id history_TextView1
+id history_TextView2
+id history_TextView3
 id history_back_to_menu
 id history_button
 id home
@@ -2014,6 +2017,7 @@ id navigation_bar_item_large_label_view
 id navigation_bar_item_small_label_view
 id navigation_header_container
 id never
+id noHistory_TextView
 id noScroll
 id none
 id normal
@@ -2023,7 +2027,6 @@ id notification_main_column_container
 id off
 id on
 id options_back_to_menu
-id options_button
 id outline
 id outward
 id packed

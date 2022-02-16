@@ -42,6 +42,7 @@ public class TakePicture extends AppCompatActivity {
     TextView formatInfo;
     Interpreter tflite;
     ArrayList<Bitmap> photoHistory = new ArrayList();
+    ArrayList<String> resultHistory = new ArrayList();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,6 +73,9 @@ public class TakePicture extends AppCompatActivity {
             photoHistory = intent.getParcelableArrayListExtra("bitmapList");
             Log.i("error", "Size TP: "+photoHistory.size());
         }
+        if (intent.hasExtra("resultList")){
+            resultHistory = intent.getStringArrayListExtra("resultList");
+        }
 
         back = findViewById(R.id.take_a_picture_back);
         back.setSoundEffectsEnabled(false);
@@ -83,12 +87,16 @@ public class TakePicture extends AppCompatActivity {
                 Intent intent = new Intent(TakePicture.this, MainMenu.class);
 //                intent.putExtra("photo", photo);
                 if(photo != null){
-                    photoHistory.add(photo);
+                    photoHistory.add(0,photo);
                 }
-                if (photoHistory.size()>3){
-                    photoHistory.remove(0);
+                if (photoHistory.size() >3 ){
+                    photoHistory.remove(3);
+                }
+                if (resultHistory.size() > 3){
+                    resultHistory.remove(3);
                 }
                 intent.putExtra("bitmapList", photoHistory);
+                intent.putExtra("resultList", resultHistory);
                 startActivity(intent);
             }
         });
@@ -127,6 +135,25 @@ public class TakePicture extends AppCompatActivity {
             catOrDogTextView1.setText("Katze: " + (result[0]*100) + "%");
             catOrDogTextView2.setText("Hund: " + (result[1]*100) + "%");
             catOrDogTextView3.setText("Spinne: " + (result[2]*100) + "%");
+            float max = 0;
+            int index = 0;
+            for (int i = 0; i < result.length; i++) {
+                if (max < result[i]) {
+                    max = result[i];
+                    index = i;
+                }
+            }
+            switch (index){
+                case 0:
+                    resultHistory.add(0,"Katze: " + max*100 + "%");
+                    break;
+                case 1:
+                    resultHistory.add(0,"Hund: " + max*100 + "%");
+                    break;
+                case 2:
+                    resultHistory.add(0,"Spinne: " + max*100 + "%");
+                    break;
+            }
         }
     }
 
@@ -149,7 +176,7 @@ public class TakePicture extends AppCompatActivity {
 
         //Load model and pass it into interpreter
         try {
-            MappedByteBuffer tfliteModel = FileUtil.loadMappedFile(TakePicture.this, "model128_final_rescaleInNet.tflite");
+            MappedByteBuffer tfliteModel = FileUtil.loadMappedFile(TakePicture.this, "model128_final.tflite");
             tflite = new Interpreter(tfliteModel, new Interpreter.Options());
         } catch (IOException e){
             Log.e("result", "Error reading model", e);

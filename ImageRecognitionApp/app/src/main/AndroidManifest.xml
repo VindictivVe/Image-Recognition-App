@@ -18,7 +18,6 @@
         </activity>
         <activity android:name=".MainMenu"></activity>
         <activity android:name=".TakePicture"></activity>
-        <activity android:name=".Options"></activity>
         <activity android:name=".History"></activity>
     </application>
 </manifest>

@@ -14,6 +14,7 @@ import java.util.ArrayList;
 public class MainMenu extends AppCompatActivity {
 
     ArrayList<Bitmap> photoHistory = new ArrayList();
+    ArrayList<String> resultHistory = new ArrayList();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,14 +25,15 @@ public class MainMenu extends AppCompatActivity {
         takePicture.setSoundEffectsEnabled(false);
         Button history = findViewById(R.id.history_button);
         history.setSoundEffectsEnabled(false);
-        Button options = findViewById(R.id.options_button);
-        options.setSoundEffectsEnabled(false);
         Button exit = findViewById(R.id.exit_button);
         exit.setSoundEffectsEnabled(false);
 
         Intent intent = getIntent();
         if (intent.hasExtra("bitmapList")){
             photoHistory = intent.getParcelableArrayListExtra("bitmapList");
+        }
+        if (intent.hasExtra("resultList")){
+            resultHistory = intent.getStringArrayListExtra("resultList");
         }
 
         final MediaPlayer mp = MediaPlayer.create(this, R.raw.button_click);
@@ -41,6 +43,7 @@ public class MainMenu extends AppCompatActivity {
                 mp.start();;
                 Intent intent = new Intent(MainMenu.this, TakePicture.class);
                 intent.putExtra("bitmapList", photoHistory);
+                intent.putExtra("resultList", resultHistory);
                 startActivity(intent);
             }
         });
@@ -51,15 +54,8 @@ public class MainMenu extends AppCompatActivity {
                 mp.start();
                 Intent intent = new Intent(MainMenu.this, History.class);
                 intent.putExtra("bitmapList", photoHistory);
-                startActivity(intent);
-            }
-        });
+                intent.putExtra("resultList", resultHistory);
 
-        options.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mp.start();
-                Intent intent = new Intent(MainMenu.this, Options.class);
                 startActivity(intent);
             }
         });
