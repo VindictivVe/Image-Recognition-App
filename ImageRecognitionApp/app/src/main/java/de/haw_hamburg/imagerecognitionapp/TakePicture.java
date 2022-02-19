@@ -27,6 +27,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.io.IOException;
 import java.nio.MappedByteBuffer;
+import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -136,22 +137,27 @@ public class TakePicture extends AppCompatActivity {
             catOrDogTextView2.setText("Hund: " + (result[1]*100) + "%");
             catOrDogTextView3.setText("Spinne: " + (result[2]*100) + "%");
             float max = 0;
+            float roundNumber = 0;
             int index = 0;
             for (int i = 0; i < result.length; i++) {
                 if (max < result[i]) {
-                    max = result[i];
+
+                    roundNumber = result[i] * 100;
+                    roundNumber = (int) roundNumber;
+                    roundNumber = (float) roundNumber / 100;
+                    max = roundNumber;
                     index = i;
                 }
             }
             switch (index){
                 case 0:
-                    resultHistory.add(0,"Katze: " + max*100 + "%");
+                    resultHistory.add(0,"Katze: " + max * 100 + "%");
                     break;
                 case 1:
-                    resultHistory.add(0,"Hund: " + max*100 + "%");
+                    resultHistory.add(0,"Hund: " + max * 100 + "%");
                     break;
                 case 2:
-                    resultHistory.add(0,"Spinne: " + max*100 + "%");
+                    resultHistory.add(0,"Spinne: " + max * 100 + "%");
                     break;
             }
         }

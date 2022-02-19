@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:2:1-24:12
+ADDED from H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:2:1-23:12
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\Alex\.gradle\caches\transforms-2\files-2.1\e4d75dbed20accc39d849d00a209961c\material-1.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [org.pytorch:pytorch_android_torchvision:1.7.0] C:\Users\Alex\.gradle\caches\transforms-2\files-2.1\15022f2d58df5186e75ec1b7b4cffd34\jetified-pytorch_android_torchvision-1.7.0\AndroidManifest.xml:2:1-10:12
 MERGED from [org.pytorch:pytorch_android:1.7.0] C:\Users\Alex\.gradle\caches\transforms-2\files-2.1\b062b6626de0e4880bb876c221874a21\jetified-pytorch_android-1.7.0\AndroidManifest.xml:2:1-10:12
@@ -51,25 +51,25 @@ MERGED from [org.tensorflow:tensorflow-lite-support-api:0.3.0] C:\Users\Alex\.gr
 MERGED from [org.tensorflow:tensorflow-lite-api:2.8.0] C:\Users\Alex\.gradle\caches\transforms-2\files-2.1\8d7b755adfe797e05359febfed8d6e14\jetified-tensorflow-lite-api-2.8.0\AndroidManifest.xml:2:1-12:12
 MERGED from [org.tensorflow:tensorflow-lite-task-base:0.3.0] C:\Users\Alex\.gradle\caches\transforms-2\files-2.1\8be1646c1d8cdc81f01d8817ea55909d\jetified-tensorflow-lite-task-base-0.3.0\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.odml:image:1.0.0-beta1] C:\Users\Alex\.gradle\caches\transforms-2\files-2.1\dc338e88a8498580d05ffbf7300843f6\jetified-image-1.0.0-beta1\AndroidManifest.xml:2:1-9:12
-INJECTED from H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:2:1-23:12
 	package
 		ADDED from H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:3:5-49
 		INJECTED from H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml
 		INJECTED from H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml
-		ADDED from H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:2:1-24:12
+		ADDED from H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:2:1-23:12
 		INJECTED from H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml
-		ADDED from H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:2:1-24:12
+		ADDED from H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:2:1-23:12
 		INJECTED from H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:5:5-23:19
+ADDED from H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:5:5-22:19
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\Alex\.gradle\caches\transforms-2\files-2.1\e4d75dbed20accc39d849d00a209961c\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\Alex\.gradle\caches\transforms-2\files-2.1\e4d75dbed20accc39d849d00a209961c\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\Alex\.gradle\caches\transforms-2\files-2.1\a4bf7842722ec4460f5546066eab47a3\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
@@ -124,14 +124,10 @@ activity#de.haw_hamburg.imagerecognitionapp.TakePicture
 ADDED from H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:20:9-58
 	android:name
 		ADDED from H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:20:19-46
-activity#de.haw_hamburg.imagerecognitionapp.Options
+activity#de.haw_hamburg.imagerecognitionapp.History
 ADDED from H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:21:9-54
 	android:name
 		ADDED from H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:21:19-42
-activity#de.haw_hamburg.imagerecognitionapp.History
-ADDED from H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:22:9-54
-	android:name
-		ADDED from H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:22:19-42
 uses-sdk
 INJECTED from H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml
@@ -242,8 +238,8 @@ INJECTED from H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml
 		MERGED from H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml
 		INJECTED from H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-IMPLIED from H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:2:1-24:12 reason: src.java.org.tensorflow.lite.task.core has a targetSdkVersion < 4
+IMPLIED from H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:2:1-23:12 reason: src.java.org.tensorflow.lite.task.core has a targetSdkVersion < 4
 uses-permission#android.permission.READ_PHONE_STATE
-IMPLIED from H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:2:1-24:12 reason: src.java.org.tensorflow.lite.task.core has a targetSdkVersion < 4
+IMPLIED from H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:2:1-23:12 reason: src.java.org.tensorflow.lite.task.core has a targetSdkVersion < 4
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:2:1-24:12 reason: src.java.org.tensorflow.lite.task.core requested WRITE_EXTERNAL_STORAGE
+IMPLIED from H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:2:1-23:12 reason: src.java.org.tensorflow.lite.task.core requested WRITE_EXTERNAL_STORAGE

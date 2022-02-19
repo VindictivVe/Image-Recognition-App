@@ -32,7 +32,6 @@
         </activity>
         <activity android:name="de.haw_hamburg.imagerecognitionapp.MainMenu" />
         <activity android:name="de.haw_hamburg.imagerecognitionapp.TakePicture" />
-        <activity android:name="de.haw_hamburg.imagerecognitionapp.Options" />
         <activity android:name="de.haw_hamburg.imagerecognitionapp.History" />
     </application>
 

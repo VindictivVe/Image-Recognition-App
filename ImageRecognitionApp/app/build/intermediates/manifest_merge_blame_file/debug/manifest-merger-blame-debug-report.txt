@@ -15,7 +15,7 @@
 13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 14
 15    <application
-15-->H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:5:5-23:19
+15-->H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:5:5-22:19
 16        android:allowBackup="true"
 16-->H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:6:9-35
 17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -53,12 +53,9 @@
 34        <activity android:name="de.haw_hamburg.imagerecognitionapp.TakePicture" />
 34-->H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:20:9-58
 34-->H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:20:19-46
-35        <activity android:name="de.haw_hamburg.imagerecognitionapp.Options" />
+35        <activity android:name="de.haw_hamburg.imagerecognitionapp.History" />
 35-->H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:21:9-54
 35-->H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:21:19-42
-36        <activity android:name="de.haw_hamburg.imagerecognitionapp.History" />
-36-->H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:22:9-54
-36-->H:\KI-macht\ImageRecognitionApp\app\src\main\AndroidManifest.xml:22:19-42
-37    </application>
-38
-39</manifest>
+36    </application>
+37
+38</manifest>

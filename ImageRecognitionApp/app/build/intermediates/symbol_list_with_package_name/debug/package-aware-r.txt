@@ -2026,7 +2026,6 @@ id notification_main_column
 id notification_main_column_container
 id off
 id on
-id options_back_to_menu
 id outline
 id outward
 id packed
@@ -2313,7 +2312,6 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
-layout options_view
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
