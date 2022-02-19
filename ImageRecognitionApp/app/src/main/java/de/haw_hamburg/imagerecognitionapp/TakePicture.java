@@ -133,19 +133,14 @@ public class TakePicture extends AppCompatActivity {
             catOrDogTextView2.setVisibility(View.VISIBLE);
             catOrDogTextView3.setVisibility(View.VISIBLE);
 
-            catOrDogTextView1.setText("Katze: " + (result[0]*100) + "%");
-            catOrDogTextView2.setText("Hund: " + (result[1]*100) + "%");
-            catOrDogTextView3.setText("Spinne: " + (result[2]*100) + "%");
+            catOrDogTextView1.setText("Katze: " + (roundNumber(result[0])*100) + "%");
+            catOrDogTextView2.setText("Hund: " + (roundNumber(result[1])*100) + "%");
+            catOrDogTextView3.setText("Spinne: " + (roundNumber(result[2])*100) + "%");
             float max = 0;
-            float roundNumber = 0;
             int index = 0;
             for (int i = 0; i < result.length; i++) {
                 if (max < result[i]) {
-
-                    roundNumber = result[i] * 100;
-                    roundNumber = (int) roundNumber;
-                    roundNumber = (float) roundNumber / 100;
-                    max = roundNumber;
+                    max = roundNumber(result[i]);
                     index = i;
                 }
             }
@@ -199,6 +194,13 @@ public class TakePicture extends AppCompatActivity {
         tflite.close();
 
         return probabilityBuffer.getFloatArray();
+    }
+
+    public float roundNumber(float number){
+        number = number * 100;
+        number = (int) number;
+        number = (float) number / 100;
+        return number;
     }
 }
 
