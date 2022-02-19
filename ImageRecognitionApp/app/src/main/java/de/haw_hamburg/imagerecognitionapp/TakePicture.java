@@ -133,26 +133,29 @@ public class TakePicture extends AppCompatActivity {
             catOrDogTextView2.setVisibility(View.VISIBLE);
             catOrDogTextView3.setVisibility(View.VISIBLE);
 
-            catOrDogTextView1.setText("Katze: " + (roundNumber(result[0])*100) + "%");
-            catOrDogTextView2.setText("Hund: " + (roundNumber(result[1])*100) + "%");
-            catOrDogTextView3.setText("Spinne: " + (roundNumber(result[2])*100) + "%");
+            catOrDogTextView1.setText("Katze: " + (roundNumber(result[0]*100)) + "%");
+            catOrDogTextView2.setText("Hund: " + (roundNumber(result[1]*100)) + "%");
+            catOrDogTextView3.setText("Spinne: " + (roundNumber(result[2]*100)) + "%");
+            Log.i("rN", "number1: " + roundNumber(0.221234f*100));
+            Log.i("rN", "number2: " + roundNumber(0.883456f*100));
+            Log.i("rN", "number3: " + roundNumber(0.665678f*100));
             float max = 0;
             int index = 0;
             for (int i = 0; i < result.length; i++) {
                 if (max < result[i]) {
-                    max = roundNumber(result[i]);
+                    max = roundNumber(result[i]*100);
                     index = i;
                 }
             }
             switch (index){
                 case 0:
-                    resultHistory.add(0,"Katze: " + max * 100 + "%");
+                    resultHistory.add(0,"Katze: " + max+ "%");
                     break;
                 case 1:
-                    resultHistory.add(0,"Hund: " + max * 100 + "%");
+                    resultHistory.add(0,"Hund: " + max + "%");
                     break;
                 case 2:
-                    resultHistory.add(0,"Spinne: " + max * 100 + "%");
+                    resultHistory.add(0,"Spinne: " + max + "%");
                     break;
             }
         }
