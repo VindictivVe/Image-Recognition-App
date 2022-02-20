@@ -41,7 +41,7 @@ for i in range(len(pictureFiles)):
         tensor_data_list = []
 
 class CNN(nn.Module): #neuronale net
-    def __init__(self): #'construcktor'
+    def __init__(self): #kinda like 'construcktor'
         super(CNN,self).__init__()
         self.conv1 = nn.Conv2d(3, 6, kernel_size=5) #no optimized net (numbers)
         self.conv2 = nn.Conv2d(6, 12, kernel_size=5)
