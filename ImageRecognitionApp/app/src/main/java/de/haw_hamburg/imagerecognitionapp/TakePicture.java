@@ -142,7 +142,7 @@ public class TakePicture extends AppCompatActivity {
             float max = 0;
             int index = 0;
             for (int i = 0; i < result.length; i++) {
-                if (max < result[i]) {
+                if (max < roundNumber(result[i]*100)) {
                     max = roundNumber(result[i]*100);
                     index = i;
                 }
